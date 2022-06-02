@@ -24,7 +24,7 @@ $(document).ready(function() {
                             </ul>\
                         </li>\
                         <li class="nav-item">\
-                            <a class="nav-link" href="#">Izgubljeni Ljubimci</a>\
+                            <a class="nav-link" href="izgubljeni_ljubimci.html">Izgubljeni Ljubimci</a>\
                         </li>\
                         <li class="nav-item">\
                             <a class="nav-link" href="dodaj_oglas.html">Dodaj Oglas</a>\

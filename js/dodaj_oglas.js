@@ -11,7 +11,8 @@ $(document).ready(function(){
         let oglas = {
             ime: ime,
             opis: opis,
-            tel: tel
+            tel: tel,
+            komentari: []
         };
 
         let oglasi = JSON.parse(localStorage.getItem("oglasi"));
