@@ -1,0 +1,49 @@
+.navbar {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+    font-size: 21.2px;
+    /*font-size: 1.4vw;*/
+
+    background-color: red;
+    border-radius: 0.5rem;
+}
+
+.navbar-brand>img {
+    border-radius: 0.5rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url("../media/menu.svg");
+}
+
+.nav-item {
+    background-color: aqua;
+    border-radius: 0.5rem;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.dropdown-item, .dropdown-menu {
+    background-color: yellow;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: darkgray;
+}
+
+.nav-link:focus {
+    color: darkgray
+}
