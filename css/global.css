@@ -47,3 +47,9 @@
 .nav-link:focus {
     color: darkgray
 }
+
+.real-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
