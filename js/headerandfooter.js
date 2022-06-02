@@ -19,7 +19,7 @@ $(document).ready(function() {
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Zivotinje</a>\
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">\
                                 <li><a class="dropdown-item text-center" href="psi.html">Psi</a></li>\
-                                <li><a class="dropdown-item text-center" href="#">Macke</a></li>\
+                                <li><a class="dropdown-item text-center" href="macke.html">Macke</a></li>\
                                 <li><a class="dropdown-item text-center" href="#">Ptice</a></li>\
                             </ul>\
                         </li>\
@@ -40,7 +40,6 @@ $(document).ready(function() {
             </div>\
         </nav>\
     ');
-
 
     let footer = $('\
         <div class="col-12 text-center mt-5">\
