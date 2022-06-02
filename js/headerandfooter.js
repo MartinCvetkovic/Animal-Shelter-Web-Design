@@ -20,7 +20,7 @@ $(document).ready(function() {
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">\
                                 <li><a class="dropdown-item text-center" href="psi.html">Psi</a></li>\
                                 <li><a class="dropdown-item text-center" href="macke.html">Macke</a></li>\
-                                <li><a class="dropdown-item text-center" href="#">Ptice</a></li>\
+                                <li><a class="dropdown-item text-center" href="ptice.html">Ptice</a></li>\
                             </ul>\
                         </li>\
                         <li class="nav-item">\
