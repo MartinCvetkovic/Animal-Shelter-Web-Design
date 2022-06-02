@@ -18,7 +18,7 @@ $(document).ready(function() {
                         <li class="nav-item dropdown">\
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Zivotinje</a>\
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">\
-                                <li><a class="dropdown-item text-center" href="#">Psi</a></li>\
+                                <li><a class="dropdown-item text-center" href="psi.html">Psi</a></li>\
                                 <li><a class="dropdown-item text-center" href="#">Macke</a></li>\
                                 <li><a class="dropdown-item text-center" href="#">Ptice</a></li>\
                             </ul>\
