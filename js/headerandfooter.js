@@ -16,12 +16,17 @@ $(document).ready(function() {
                             <a class="nav-link" href="#">Pocetna</a>\
                         </li>\
                         <li class="nav-item dropdown">\
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Zivotinje</a>\
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">\
-                                <li><a class="dropdown-item text-center" href="psi.html">Psi</a></li>\
-                                <li><a class="dropdown-item text-center" href="#">Macke</a></li>\
-                                <li><a class="dropdown-item text-center" href="#">Ptice</a></li>\
-                            </ul>\
+                            <div class="btn-group">\
+                                <a class="nav-link" href="#">Zivotinje</a>\
+                                <a class="nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">\
+                                    <span class="visually-hidden">Toggle Dropdown</span>\
+                                </a>\
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">\
+                                    <li><a class="dropdown-item text-center" href="psi.html">Psi</a></li>\
+                                    <li><a class="dropdown-item text-center" href="macke.html">Macke</a></li>\
+                                    <li><a class="dropdown-item text-center" href="ptice.html">Ptice</a></li>\
+                                </ul>\
+                            </div>\
                         </li>\
                         <li class="nav-item">\
                             <a class="nav-link" href="izgubljeni_ljubimci.html">Izgubljeni Ljubimci</a>\
@@ -40,7 +45,6 @@ $(document).ready(function() {
             </div>\
         </nav>\
     ');
-
 
     let footer = $('\
         <div class="col-12 text-center mt-5">\
