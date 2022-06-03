@@ -36,6 +36,10 @@
     background-color: yellow;
 }
 
+.dropdown-hover-target {
+    margin-top: 0px !important;
+}
+
 .nav-link {
     color: black;
 }

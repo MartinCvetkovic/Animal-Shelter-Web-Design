@@ -16,12 +16,11 @@ $(document).ready(function() {
                             <a class="nav-link" href="#">Pocetna</a>\
                         </li>\
                         <li class="nav-item dropdown">\
-                            <div class="btn-group">\
-                                <a class="nav-link" href="#">Zivotinje</a>\
-                                <a class="nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">\
-                                    <span class="visually-hidden">Toggle Dropdown</span>\
+                            <div class="btn-group dropdown-hover-trigger">\
+                                <a href="#" class="dropdown-toggle nav-link" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">\
+                                    Zivotinje\
                                 </a>\
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">\
+                                <ul class="dropdown-menu dropdown-hover-target" aria-labelledby="navbarDropdown">\
                                     <li><a class="dropdown-item text-center" href="psi.html">Psi</a></li>\
                                     <li><a class="dropdown-item text-center" href="macke.html">Macke</a></li>\
                                     <li><a class="dropdown-item text-center" href="ptice.html">Ptice</a></li>\
@@ -54,6 +53,14 @@ $(document).ready(function() {
 
     $("body>div.container").prepend(header);
     $("body>div.container").append(footer);
+
+    $(".dropdown-hover-trigger").hover(function() {
+        //$(this).addClass("show");
+        $(".dropdown-hover-target").addClass("show").attr("data-bs-popper", "none");
+    }, function() {
+        //$(this).removeClass("show");
+        $(".dropdown-hover-target").removeClass("show").removeAttr("data-bs-popper");
+    });
 
 
 });
