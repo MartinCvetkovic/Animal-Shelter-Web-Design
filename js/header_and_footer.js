@@ -38,7 +38,7 @@ $(document).ready(function() {
                             <a class="nav-link" href="#">Moj Nalog</a>\
                         </li>\
                         <li class="nav-item">\
-                            <a class="nav-link" href="#">O Nama</a>\
+                            <a class="nav-link" href="o_nama.html">O Nama</a>\
                         </li>\
                     </ul>\
                 </div>\
