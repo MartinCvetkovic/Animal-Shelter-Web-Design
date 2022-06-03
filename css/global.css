@@ -5,7 +5,7 @@
     font-size: 21.2px;
     /*font-size: 1.4vw;*/
 
-    background-color: red;
+    background-image: repeating-conic-gradient(red, yellow 0.1turn, green 0.2turn);
     border-radius: 0.5rem;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .nav-item {
-    background-color: aqua;
+    background-color: deeppink;
     border-radius: 0.5rem;
 
 
