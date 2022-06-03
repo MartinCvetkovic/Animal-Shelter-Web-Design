@@ -13,7 +13,7 @@ $(document).ready(function() {
                 <div class="collapse navbar-collapse" id="navbarItems">\
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">\
                         <li class="nav-item">\
-                            <a class="nav-link" href="#">Pocetna</a>\
+                            <a class="nav-link" href="index.html">Pocetna</a>\
                         </li>\
                         <li class="nav-item dropdown">\
                             <div class="btn-group dropdown-hover-trigger">\
