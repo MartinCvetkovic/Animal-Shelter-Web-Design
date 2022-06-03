@@ -35,7 +35,7 @@ $(document).ready(function() {
                             <a class="nav-link" href="dodaj_oglas.html">Dodaj Oglas</a>\
                         </li>\
                         <li class="nav-item">\
-                            <a class="nav-link" href="#">Moj Nalog</a>\
+                            <a class="nav-link" href="moj_nalog.html">Moj Nalog</a>\
                         </li>\
                         <li class="nav-item">\
                             <a class="nav-link" href="o_nama.html">O Nama</a>\
