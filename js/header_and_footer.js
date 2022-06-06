@@ -62,5 +62,18 @@ $(document).ready(function() {
         $(".dropdown-hover-target").removeClass("show").removeAttr("data-bs-popper");
     });
 
-
+    let deg = 0;
+    let speed = 1;
+    let sign = 1;
+    setInterval(function() {
+        deg = (deg+speed*sign)%360;
+        $(".navbar").css("background-image", "repeating-conic-gradient(from " + deg + "deg, rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%,rgba(208, 222, 33, 1) 20%,rgba(79, 220, 74, 1) 30%,rgba(63, 218, 216, 1) 40%,rgba(47, 201, 226, 1) 50%,rgba(28, 127, 238, 1) 60%,rgba(95, 21, 242, 1) 70%,rgba(186, 12, 248, 1) 80%,rgba(251, 7, 217, 1) 90%,rgba(255, 0, 0, 1) 100%");
+    }, 10);
+    setInterval(function() {
+        speed = Math.random() * 12 - 10;
+        if (speed < 0.5) speed = 0.5;
+    }, 200);
+    setInterval(function() {
+        if (Math.random() < 0.5) sign = -sign;
+    }, 2000);
 });
