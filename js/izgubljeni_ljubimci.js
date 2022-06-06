@@ -37,8 +37,10 @@ $(document).ready(function(){
         win.document.close();
 
         win.print();*/
-        let elem = document.getElementById("tbl" + id);
-        elem.getElementsByClassName("last-row")[0].hidden = true;
+        //let elem = document.getElementById("tbl" + id);
+        let elem = $("tbody#pdfGroup_" + id)[0];
+        
+        //elem.getElementsByClassName("last-row")[0].hidden = true;
         html2canvas(elem, {
             onrendered: function (canvas) {
                 var data = canvas.toDataURL();
@@ -51,9 +53,9 @@ $(document).ready(function(){
                 pdfMake.createPdf(docDefinition).download("Oglas.pdf");
             }
         });
-        setTimeout(function(){
+        /*setTimeout(function(){
             elem.getElementsByClassName("last-row")[0].hidden = false;
-        }, 0.001);
+        }, 0.001);*/
     }
 
 
@@ -65,8 +67,8 @@ $(document).ready(function(){
         }
 
         oglasi.forEach((oglas, index) => {
-            let row = "<table class='table text-center' id='tbl" + index + "'><tr><td>Ime ljubimca: </td><td>" + oglas.ime + "</td></tr><tr><td>Opis: </td><td>"
-                + oglas.opis + "</td></tr><tr><td>Kontakt telefon: </td><td>" + oglas.tel + "</td></tr>"
+            let row = "<table class='table text-center' id='tbl" + index + "'><tbody id='pdfGroup_" + index + "'><tr><td>Ime ljubimca: </td><td>" + oglas.ime + "</td></tr><tr><td>Opis: </td><td>"
+                + oglas.opis + "</td></tr><tr><td>Kontakt telefon: </td><td>" + oglas.tel + "</td></tr></tbody>"
                 + "<tr class='last-row'><td><input class='form-control' id='inp" + index + "' type='text' placeholder='Tekst komentara'></td>"
                 +"<td><button class='comment-button btn btn-light btn-outline-secondary' id='btn" + index
                 + "'>Ostavi komentar</button></td><td><button class='pdf-button btn btn-light btn-outline-secondary' id='pdf" + index
