@@ -62,25 +62,25 @@ hr.divider {
 }
 
 .weigth {
-    width: 45%;
+    width: 35%;
     text-align: center;
 
     background: 
     linear-gradient(to top right,#0000 50%,whitesmoke 52%) top right/30% 101% no-repeat, limegreen;
 
-    padding-bottom: 1rem;
-    padding-left: 0rem;
-    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.4rem;
+    padding-top: 0.2rem;
     border-bottom-left-radius: 1.5rem;
 
     /* Popravlja liniju od 1 px sto se nekad pojavljuje sa desne strane... */
     /* nvm, sad je feature lol */
-    clip-path: inset(0px 1rem 0px 0px);
+    clip-path: inset(0px 0.2rem 0px 0px);
 
     padding-right: 2rem;
     position: relative;
 
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 900;
     color: white;
     font-family: 'Courier New', Courier, monospace;
@@ -92,25 +92,25 @@ hr.divider {
 }
 
 .age {
-    width: 55%;
+    width: 49%;
     text-align: center;
 
     background: 
-    linear-gradient(to top left,#0000 50%,whitesmoke 52%) top left/24% 101% no-repeat, orangered;
+    linear-gradient(to top left,#0000 50%,whitesmoke 52%) top left/18% 101% no-repeat, orangered;
 
-    padding-bottom: 1rem;
-    padding-right: 0rem;
-    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+    padding-right: 0.6rem;
+    padding-top: 0.2rem;
     border-bottom-right-radius: 1.5rem;
 
     /* Popravlja liniju od 1 px sto se nekad pojavljuje sa leve strane... */
     /* nvm, sad je feature lol */
-    clip-path: inset(0px 0px 0px 1rem);
+    clip-path: inset(0px 0px 0px 0.2rem);
 
     padding-left: 2rem;
     position: relative;
 
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 900;
     color: white;
     font-family: 'Courier New', Courier, monospace;
