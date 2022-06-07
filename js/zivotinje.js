@@ -45,7 +45,7 @@ $(document).ready(function() {
             case 'macke': localStorage.setItem(tip, JSON.stringify([
                 {
                     id: '0',
-                    name: '?',
+                    name: 'Doki',
                     breed: 'Himalajska Macka',
                     gender: 'F',
                     description: 'Kratak Opis, example text to build on the card title and make up the bulk of the card\'s content.',
@@ -57,7 +57,7 @@ $(document).ready(function() {
                 },
                 {
                     id: '1',
-                    name: '?',
+                    name: 'Kleopatra',
                     breed: 'Persijska Macka',
                     gender: 'F',
                     description: 'Kratak Opis, example text to build on the card title and make up the bulk of the card\'s content.',
@@ -69,10 +69,10 @@ $(document).ready(function() {
                 },
                 {
                     id: '2',
-                    name: '?',
+                    name: 'Hiro',
                     breed: 'Egejska Macka',
                     gender: 'M',
-                    description: 'Kratak Opis, example text to build on the card title and make up the bulk of the card\'s content.',
+                    description: 'Kratak Opis, example text to build on the card title and make up the bulk of the card\'s content. kawaiiii <3',
                     kg: '0',
                     months: '0',
                     thumbnail: 'media/macka_aegean.jpg',
@@ -84,7 +84,7 @@ $(document).ready(function() {
             case 'ptice': localStorage.setItem(tip, JSON.stringify([
                 {
                     id: '0',
-                    name: '?',
+                    name: 'Pepe',
                     breed: 'Papagaj',
                     gender: 'M',
                     description: 'Kratak Opis, example text to build on the card title and make up the bulk of the card\'s content.',
@@ -96,7 +96,7 @@ $(document).ready(function() {
                 },
                 {
                     id: '1',
-                    name: '?',
+                    name: 'Marija',
                     breed: 'Stiglan',
                     gender: 'F',
                     description: 'Kratak Opis, example text to build on the card title and make up the bulk of the card\'s content.',
@@ -108,7 +108,7 @@ $(document).ready(function() {
                 },
                 {
                     id: '2',
-                    name: '?',
+                    name: 'Herakle',
                     breed: 'Obican Golub',
                     gender: 'M',
                     description: 'Kratak Opis, example text to build on the card title and make up the bulk of the card\'s content.',
