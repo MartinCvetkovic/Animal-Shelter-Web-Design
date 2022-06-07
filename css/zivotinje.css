@@ -2,8 +2,134 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
+
+    margin-top: 0.6rem;
 }
 
 .card {
     width: 18rem;
+    background-color: whitesmoke;
+    
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
 }
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out .2s;
+}
+
+.gender {
+    width: 20px;
+    /*filter: invert(48%) sepia(4%) saturate(981%) hue-rotate(167deg) brightness(92%) contrast(81%);*/
+}
+
+.male {
+    filter: invert(94%) sepia(37%) saturate(4102%) hue-rotate(170deg) brightness(102%) contrast(94%);
+}
+
+.female {
+    filter: invert(82%) sepia(93%) saturate(7495%) hue-rotate(279deg) brightness(108%) contrast(94%);
+}
+
+hr.divider {
+    margin: 2px;
+    /*border: 1px solid rgba(0,0,0,.125);*/
+    color: #212529;
+}
+
+.card-text {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.nondestructive {
+    color: initial;
+    text-decoration: initial;
+}
+
+.nondestructive:hover {
+    color: initial;
+}
+
+.attributes {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.weigth {
+    width: 45%;
+    text-align: center;
+
+    background: 
+    linear-gradient(to top right,#0000 50%,whitesmoke 52%) top right/30% 101% no-repeat, limegreen;
+
+    padding-bottom: 1rem;
+    padding-left: 0rem;
+    padding-top: 1rem;
+    border-bottom-left-radius: 1.5rem;
+
+    /* Popravlja liniju od 1 px sto se nekad pojavljuje sa desne strane... */
+    /* nvm, sad je feature lol */
+    clip-path: inset(0px 1rem 0px 0px);
+
+    padding-right: 2rem;
+    position: relative;
+
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.weigth>img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.age {
+    width: 55%;
+    text-align: center;
+
+    background: 
+    linear-gradient(to top left,#0000 50%,whitesmoke 52%) top left/24% 101% no-repeat, orangered;
+
+    padding-bottom: 1rem;
+    padding-right: 0rem;
+    padding-top: 1rem;
+    border-bottom-right-radius: 1.5rem;
+
+    /* Popravlja liniju od 1 px sto se nekad pojavljuje sa leve strane... */
+    /* nvm, sad je feature lol */
+    clip-path: inset(0px 0px 0px 1rem);
+
+    padding-left: 2rem;
+    position: relative;
+
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*
+.weigth::after {
+    content: '';
+    position: absolute;
+    right: -1rem;
+    bottom: 0rem;
+
+    width: 1rem; 
+    height: 100%; 
+    background-color: limegreen;
+
+    border-top: 5px solid lightgreen;
+
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: -3rem;
+}
+*/
