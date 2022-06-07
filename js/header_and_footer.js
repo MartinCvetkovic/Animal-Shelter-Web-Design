@@ -62,7 +62,7 @@ $(document).ready(function() {
         $(".dropdown-hover-target").removeClass("show").removeAttr("data-bs-popper");
     });
 
-    let deg = 0;
+    let deg = localStorage.getItem('deg')?parseInt(localStorage.getItem('deg')):0;
     let speed = 1;
     let sign = 1;
     setInterval(function() {
@@ -76,4 +76,8 @@ $(document).ready(function() {
     setInterval(function() {
         if (Math.random() < 0.5) sign = -sign;
     }, 2000);
+
+    $(window).on("unload", function() {
+        localStorage.setItem('deg', deg);
+    });
 });
