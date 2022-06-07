@@ -5,6 +5,7 @@ $(document).ready(function() {
         switch(tip) {
             case 'psi': localStorage.setItem(tip, JSON.stringify([
                 {
+                    id: '0',
                     name: 'Donna',
                     breed: 'Buldog',
                     gender: 'F',
@@ -16,6 +17,7 @@ $(document).ready(function() {
                     pictures: []
                 },
                 {
+                    id: '1',
                     name: 'Carli',
                     breed: 'Civava',
                     gender: 'M',
@@ -27,6 +29,7 @@ $(document).ready(function() {
                     pictures: []
                 },
                 {
+                    id: '2',
                     name: 'Dusàn',
                     breed: 'Pudla',
                     gender: 'M',
@@ -41,6 +44,7 @@ $(document).ready(function() {
                 break;
             case 'macke': localStorage.setItem(tip, JSON.stringify([
                 {
+                    id: '0',
                     name: '?',
                     breed: 'Himalajska Macka',
                     gender: 'F',
@@ -52,6 +56,7 @@ $(document).ready(function() {
                     pictures: []
                 },
                 {
+                    id: '1',
                     name: '?',
                     breed: 'Persijska Macka',
                     gender: 'F',
@@ -63,6 +68,7 @@ $(document).ready(function() {
                     pictures: []
                 },
                 {
+                    id: '2',
                     name: '?',
                     breed: 'Egejska Macka',
                     gender: 'M',
@@ -77,6 +83,7 @@ $(document).ready(function() {
                 break;
             case 'ptice': localStorage.setItem(tip, JSON.stringify([
                 {
+                    id: '0',
                     name: '?',
                     breed: 'Papagaj',
                     gender: 'M',
@@ -88,6 +95,7 @@ $(document).ready(function() {
                     pictures: []
                 },
                 {
+                    id: '1',
                     name: '?',
                     breed: 'Stiglan',
                     gender: 'F',
@@ -99,6 +107,7 @@ $(document).ready(function() {
                     pictures: []
                 },
                 {
+                    id: '2',
                     name: '?',
                     breed: 'Obican Golub',
                     gender: 'M',
@@ -122,7 +131,7 @@ $(document).ready(function() {
         shown.forEach((animal, i) => {
             let card = '\
             <div class="col-lg-4 col-md-6 col-sm-12 real-center">\
-                <a href="zivotinja_pregled.html" class="nondestructive" id="'+ tip + "_" + i +'">\
+                <a href="zivotinja_pregled.html" class="nondestructive" id="'+ tip + "_" + animal.id +'">\
                     <div class="card mt-3 mb-3">\
                         <img class="card-img-top" src="'+ animal.thumbnail +'" alt="Slika zivotinje">\
                         <div class="card-body pb-0">\
@@ -140,6 +149,8 @@ $(document).ready(function() {
 
             $("#animals").append(card);
         });
+
+        attachLinks();
     }
 
     function sortByAge(invert = 0) {
@@ -160,9 +171,12 @@ $(document).ready(function() {
 
     renderAnimals();
 
-    $("a").click(function() {
-        localStorage.setItem('aId', $(this).attr('id'));
-    });
+    function attachLinks() {
+        $("a").click(function() {
+            localStorage.setItem('aId', $(this).attr('id'));
+        });
+    }
+    
 
     let as = 0;
     let aBaseText = $("#ageSort").text();
