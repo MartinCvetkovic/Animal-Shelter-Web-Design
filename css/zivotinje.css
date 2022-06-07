@@ -75,7 +75,7 @@ hr.divider {
 
     /* Popravlja liniju od 1 px sto se nekad pojavljuje sa desne strane... */
     /* nvm, sad je feature lol */
-    clip-path: inset(0px 0.2rem 0px 0px);
+    clip-path: inset(0px 0.1rem 0px 0px);
 
     padding-right: 2rem;
     position: relative;
@@ -105,7 +105,7 @@ hr.divider {
 
     /* Popravlja liniju od 1 px sto se nekad pojavljuje sa leve strane... */
     /* nvm, sad je feature lol */
-    clip-path: inset(0px 0px 0px 0.2rem);
+    clip-path: inset(0px 0px 0px 0.1rem);
 
     padding-left: 2rem;
     position: relative;

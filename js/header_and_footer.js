@@ -4,7 +4,7 @@ $(document).ready(function() {
     let header = $('\
         <nav class="navbar navbar-expand-lg nav-fill mb-3 mt-3">\
             <div class="container-fluid">\
-                <a class="navbar-brand" href="#">\
+                <a class="navbar-brand" href="o_nama.html">\
                     <img src="./media/logo.png" width="100">\
                 </a>\
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">\
@@ -17,7 +17,7 @@ $(document).ready(function() {
                         </li>\
                         <li class="nav-item dropdown">\
                             <div class="btn-group dropdown-hover-trigger">\
-                                <a href="#" class="dropdown-toggle nav-link" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">\
+                                <a href="zivotinje.html" class="dropdown-toggle nav-link" id="dropdownMenuButton1" aria-expanded="false">\
                                     Zivotinje\
                                 </a>\
                                 <ul class="dropdown-menu dropdown-hover-target" aria-labelledby="navbarDropdown">\
