@@ -131,8 +131,8 @@ $(document).ready(function() {
         shown.forEach((animal, i) => {
             let card = '\
             <div class="col-lg-4 col-md-6 col-sm-12 real-center">\
-                <a href="zivotinja_pregled.html" class="nondestructive" id="'+ tip + "_" + animal.id +'">\
-                    <div class="card mt-3 mb-3">\
+                <a href="zivotinja_pregled.html" class="nondestructive d-block mt-3 mb-3" id="'+ tip + "_" + animal.id +'">\
+                    <div class="card">\
                         <img class="card-img-top" src="'+ animal.thumbnail +'" alt="Slika zivotinje">\
                         <div class="card-body pb-0">\
                             <h5 class="card-title">'+ animal.name +'</h5>\
