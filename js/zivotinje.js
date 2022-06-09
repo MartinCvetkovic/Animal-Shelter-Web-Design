@@ -13,7 +13,7 @@ $(document).ready(function() {
                     kg: '17',
                     months: '37',
                     thumbnail: 'media/dog_buldog.jpeg',
-                    videos: [],
+                    videos: ['https://www.youtube.com/embed/ImlmOpMSAHQ', 'https://www.youtube.com/embed/LzG9lURtT68', 'https://www.youtube.com/embed/RCd_8va7UI8', 'https://www.youtube.com/embed/jBcDBwkV0b8', 'https://www.youtube.com/embed/ll4d5Lt-Ie8'],
                     pictures: ['media/dog_buldog.jpeg', 'media/dog_civava.jpg', 'media/dog_pudla.webp', 'media/ptica_golub.jpg', 'media/pet_lost.jpg']
                 },
                 {

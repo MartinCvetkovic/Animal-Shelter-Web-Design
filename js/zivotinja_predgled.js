@@ -34,4 +34,27 @@ $(document).ready(function() {
         }
         im.append(row);
     }
+
+    // ------------------
+
+    let vid = $("#videos")
+    let j = 0;
+    row = $("<div class='row'></div>");
+    animal.videos.forEach(element => {
+        
+        row.append($("<div class='col-xl-3 col-md-6 col-xs-12 mb-3'><iframe width='100%' height='100%' src=" + element + " title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"));
+        j = (j+1)%4;
+        if (j == 0) {
+            vid.append(row);
+            row = $("<div class='row'></div>");
+        }
+    });
+
+    if (j != 0) {
+        while (j != 0) {
+            row.append("<div class='col'></div>")
+            j = (j+1)%4;
+        }
+        vid.append(row);
+    }
 });
