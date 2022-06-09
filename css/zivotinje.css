@@ -6,12 +6,45 @@
     margin-top: 0.6rem;
 }
 
+.small-image {
+    height: 7rem;
+    width: 9rem;
+
+    margin-top: initial;
+}
+
 .card {
     width: 18rem;
     background-color: whitesmoke;
     
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
+}
+
+.card-deck {
+    padding-left: 2rem;
+}
+
+.card-deck .card {
+    width: 30rem;
+    border-radius: 0.2rem;
+}
+
+.card-deck .card-title {
+    font-size: 2rem;
+}
+
+.card-deck .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vrsta {
+    font-weight: bolder;
+
+    padding-left: 2rem;
+    font-size: 2rem;
 }
 
 .card:hover {

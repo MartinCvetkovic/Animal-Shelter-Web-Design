@@ -6,6 +6,32 @@ $(document).ready(function() {
     //name, breed, gender, description, kg, months, thumbnail, videos, pictures
     let animal = JSON.parse(localStorage.getItem(tip))[id];
 
-    $("#animal").append("<p>Ime: " + animal.name + "</p>");
-    $("#animal").append("<img src=" + animal.thumbnail + ">");
+    $("#name").append(animal.name);
+    $("#breed").append(animal.breed).append("&nbsp<img src=" + (animal.gender=="M"?"media/gender_male.png":"media/gender_female.png") + " class="+ (animal.gender=="M"?"male":"female") +">")
+    $("#picture").append("<img src=" + animal.thumbnail + " class='thumbnail'>");
+
+    $("#description").append(animal.description);
+    $("#weigth").append("Tezina: " + animal.kg + " kg")
+    $("#age").append("Starost: " + Math.floor(animal.months/12) + " godina, " + animal.months%12 + " meseci");
+
+    let im = $("#images")
+    let i = 0;
+    let row = $("<div class='row'></div>");
+    animal.pictures.forEach(element => {
+        
+        row.append($("<div class='col-xl-3 col-md-6 col-xs-12 mb-3'><img src='" + element + "' class='pic'></div>"));
+        i = (i+1)%4;
+        if (i == 0) {
+            im.append(row);
+            row = $("<div class='row'></div>");
+        }
+    });
+
+    if (i != 0) {
+        while (i != 0) {
+            row.append("<div class='col'></div>")
+            i = (i+1)%4;
+        }
+        im.append(row);
+    }
 });

@@ -1,0 +1,22 @@
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    margin-top: 0.6rem;
+}
+
+.male {
+    filter: invert(94%) sepia(37%) saturate(4102%) hue-rotate(170deg) brightness(102%) contrast(94%);
+}
+
+.female {
+    filter: invert(82%) sepia(93%) saturate(7495%) hue-rotate(279deg) brightness(108%) contrast(94%);
+}
+
+.pic {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}

@@ -14,7 +14,7 @@ $(document).ready(function() {
                     months: '37',
                     thumbnail: 'media/dog_buldog.jpeg',
                     videos: [],
-                    pictures: []
+                    pictures: ['media/dog_buldog.jpeg', 'media/dog_civava.jpg', 'media/dog_pudla.webp', 'media/ptica_golub.jpg', 'media/pet_lost.jpg']
                 },
                 {
                     id: '1',
