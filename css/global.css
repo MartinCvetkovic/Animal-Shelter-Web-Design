@@ -5,7 +5,7 @@
     font-size: 21.2px;
     /*font-size: 1.4vw;*/
 
-    background-color: red;
+    background-color: #3783bd;
     border-radius: 0.5rem;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .nav-item {
-    background-color: aqua;
+    background-color: #f59440;
     border-radius: 0.5rem;
 
 
@@ -33,7 +33,7 @@
 }
 
 .dropdown-item, .dropdown-menu {
-    background-color: yellow;
+    background-color: #dc7c38;
 }
 
 .dropdown-hover-target {
@@ -57,3 +57,12 @@
     align-items: center;
     justify-content: center;
 }
+
+#footer {
+    position: static;
+    bottom:0;
+    width:100%;
+    height:5%;
+    background:#3783bd;
+    margin-bottom: 5px;
+ }
