@@ -17,8 +17,48 @@
 </head>
 <body>
     <div class="container">
-        <button id="ageSort">Sortiraj po Starosti</button>
-        <button id="nameSort">Sortiraj po Imenu</button>
+        <div class="row">
+            <div class="col-lg-4">
+                <button id="nameSort" class="btn btn-secondary">Sortiraj po Imenu</button>
+                <button id="ageSort" class="btn btn-secondary">Sortiraj po Starosti</button>
+            </div>
+            <div class="col-lg-3">
+                <div class="h-100 d-flex justify-content-around align-items-center">
+                    Pretraga po:
+                    <div>
+                        <input type="radio" class="form-check-input" name="searchtype" id="name" checked>
+                        <label class="form-check-label" for="name">Imenu</label>
+                    </div>
+                    <div>
+                        <input type="radio" class="form-check-input" name="searchtype" id="age">
+                        <label class="form-check-label" for="age">Starosti</label>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-lg-5">
+                <div id="nameForm" class="h-100 justify-content-center align-items-center">
+                    Ime:
+                    <input class="form-control" type="text" id="nameField">
+                    <button type="button" class="btn btn-success" id="nameSearchButton">Pretrazi</button>
+                </div>
+    
+                <div id="ageForm" class="h-100 justify-content-center align-items-center">
+                    <select class="form-select" id="ageOperator">
+                        <option value="more">Iznad</option>
+                        <option value="exact">Tacno</option>
+                        <option value="less">Ispod</option>
+                    </select>
+                    <input class="form-control" type="number" id="ageField">
+                    Godina&nbsp
+                    <button type="button" class="btn btn-success" id="ageSearchButton">Pretrazi</button>
+                </div>
+            </div>
+            
+        </div>
+        <hr>
+
         <div class="row" id="animals"></div>
         <input type="hidden" name="_tip" value="macke">
     </div>        

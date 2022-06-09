@@ -1,3 +1,14 @@
+.container {
+    background-color: whitesmoke;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.container>.row {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 .navbar {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;

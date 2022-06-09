@@ -133,3 +133,13 @@ hr.divider {
     border-bottom-right-radius: -3rem;
 }
 */
+
+#nameForm {
+    display: flex;
+    gap: 10px;
+}
+
+#ageForm {
+    display: flex;
+    gap: 10px;
+}

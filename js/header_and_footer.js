@@ -46,7 +46,7 @@ $(document).ready(function() {
     ');
 
     let footer = $('\
-        <div class="col-12 text-center mt-5 rounded" id="footer">\
+        <div class="col-12 text-center mt-3 mb-2 rounded" id="footer">\
             Copyright 2022, Мартин Цветковић, Петар Тирнанић, Одсек за софтверско инжењерство Електротехничког факултета Универзитета у Београду\
         </div>\
     ');

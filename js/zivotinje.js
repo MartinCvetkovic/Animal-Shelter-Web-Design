@@ -139,7 +139,7 @@ $(document).ready(function() {
                             <h6 class="card-subtitle mb-2 text-muted">' + animal.breed + '&nbsp<img src="' + (animal.gender == "F"?"media/gender_female.png":"media/gender_male.png") + '" alt="' + (animal.gender == "F"?"zensko":"musko") + '" class="gender ' + (animal.gender == "F"?"female":"male") + '"></h6>\
                             <hr class="divider"><p class="card-text">' + animal.description + '</p>\
                             <div class="attributes">\
-                                <span class="weigth">' + animal.kg + ' kg</span><span class="age">' + animal.months + ' meseci</span>\
+                                <span class="weigth">' + animal.kg + ' kg</span><span class="age">' + (animal.months<12? animal.months+" meseci":Math.floor(animal.months/12)+" godina") + '</span>\
                             </div>\
                         </div>\
                     </div>\
@@ -197,4 +197,53 @@ $(document).ready(function() {
         as = 0;
         $("#ageSort").text(aBaseText);
     });
+
+    function showSearchName() {
+        $("#nameForm").show();
+        $("#ageForm").hide();
+    }
+
+    function showSearchAge() {
+        $("#nameForm").hide();
+        $("#ageForm").show();
+    }
+
+    function searchName() {
+        let text = $("#nameField").val().toLowerCase();
+        
+        shown = animals;
+        shown = shown.filter(e => e.name.toLowerCase().includes(text));
+        renderAnimals();
+    }
+
+    function searchAge() {
+        let num = $("#ageField").val();
+        let op = $("#ageOperator").val();
+
+        shown = animals;
+
+        switch(op){
+            case 'more': shown = shown.filter(e => parseInt(e.months) > num*12 );
+                break;
+            case 'exact': shown = shown.filter(e => Math.floor(parseInt(e.months)/12) == num );
+                break;
+            case 'less': shown = shown.filter(e => parseInt(e.months) < num*12 );
+                break;
+        }
+
+        renderAnimals();
+    }
+
+
+    $("#name").click(showSearchName);
+
+    $("#age").click(showSearchAge);
+
+    $("#nameSearchButton").click(searchName);
+    $("#nameField").keypress(function(event) {if (event.which == 13) searchName()});
+
+    $("#ageSearchButton").click(searchAge);
+    $("#ageField").keypress(function(event) {if (event.which == 13) searchAge()});
+
+    showSearchName();
 });
