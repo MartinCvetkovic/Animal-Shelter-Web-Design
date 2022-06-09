@@ -5,7 +5,7 @@ $(document).ready(function() {
         <nav class="navbar navbar-expand-lg nav-fill mb-3 mt-3">\
             <div class="container-fluid">\
                 <a class="navbar-brand" href="o_nama.html">\
-                    <img src="./media/logo.png" width="100">\
+                    <img src="./media/logo.jpg" width="100">\
                 </a>\
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">\
                     <span class="navbar-toggler-icon"></span>\
