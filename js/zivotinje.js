@@ -25,8 +25,8 @@ $(document).ready(function() {
                     kg: '2.1',
                     months: '57',
                     thumbnail: 'media/dog_civava.jpg',
-                    videos: [],
-                    pictures: []
+                    videos: ['https://www.youtube.com/embed/cXyumiq3ODs', 'https://www.youtube.com/embed/QKRD2f2_wSQ'],
+                    pictures: ['media/dog_civava.jpg', 'media/dog_civava_2.jpg', 'media/dog_civava_3.jpg']
                 },
                 {
                     id: '2',
@@ -37,8 +37,8 @@ $(document).ready(function() {
                     kg: '8.9',
                     months: '101',
                     thumbnail: 'media/dog_pudla.webp',
-                    videos: [],
-                    pictures: []
+                    videos: ['https://www.youtube.com/embed/Z-J1mbVt8KA', 'https://www.youtube.com/embed/uYbpE3b7oTY'],
+                    pictures: ['media/dog_pudla.webp', 'media/dog_pudla_2.jpeg']
                 }
             ]))
                 break;
@@ -53,7 +53,7 @@ $(document).ready(function() {
                     months: '69',
                     thumbnail: 'media/macka_himalajska.jpg',
                     videos: [],
-                    pictures: []
+                    pictures: ['media/macka_himalajska.jpg', 'media/macka_himalajska_2.jpg', 'media/macka_himalajska_3.jpg']
                 },
                 {
                     id: '1',
@@ -64,8 +64,8 @@ $(document).ready(function() {
                     kg: '4.4',
                     months: '47',
                     thumbnail: 'media/macka_persijska.jpg',
-                    videos: [],
-                    pictures: []
+                    videos: ['https://www.youtube.com/embed/Nm_DbC9aYBU', 'https://www.youtube.com/embed/tLb9MSJarJ0'],
+                    pictures: ['media/macka_persijska.jpg', 'media/macka_persijska_2.webp', 'media/macka_persijska_3.jpg', 'media/macka_persijska_4.jpg', 'media/macka_persijska_5.jpg']
                 },
                 {
                     id: '2',
@@ -76,8 +76,8 @@ $(document).ready(function() {
                     kg: '0.9',
                     months: '4',
                     thumbnail: 'media/macka_aegean.jpg',
-                    videos: [],
-                    pictures: []
+                    videos: ['https://www.youtube.com/embed/oDrskSPv2AQ', 'https://www.youtube.com/embed/6b_vpZpMKcs'],
+                    pictures: ['media/macka_aegean.jpg', 'media/macka_aegean_2.jpg', 'media/macka_aegean_3.jpg', 'media/macka_aegean_4.jpg']
                 }
             ]))
                 break;
@@ -91,8 +91,8 @@ $(document).ready(function() {
                     kg: '0.56',
                     months: '331',
                     thumbnail: 'media/ptica_papagaj.jpg',
-                    videos: [],
-                    pictures: []
+                    videos: ['https://www.youtube.com/embed/1i-17VZDMQQ', 'https://www.youtube.com/embed/OW7J_3z1MOI'],
+                    pictures: ['media/ptica_papagaj.jpg', 'media/ptica_papagaj_2.jpg', 'media/ptica_papagaj_3.jpg', 'media/ptica_papagaj_4.jpg', 'media/ptica_papagaj_5.webp']
                 },
                 {
                     id: '1',
@@ -103,8 +103,8 @@ $(document).ready(function() {
                     kg: '0.03',
                     months: '33',
                     thumbnail: 'media/ptica_stiglan.jpg',
-                    videos: [],
-                    pictures: []
+                    videos: ['https://www.youtube.com/embed/TT1Pahi66Rw', 'https://www.youtube.com/embed/rHaSY7TMK2I'],
+                    pictures: ['media/ptica_stiglan.jpg', 'media/ptica_stiglan_2.jpg', 'media/ptica_stiglan_3.jpg']
                 },
                 {
                     id: '2',
@@ -115,8 +115,8 @@ $(document).ready(function() {
                     kg: '0.47',
                     months: '55',
                     thumbnail: 'media/ptica_golub.jpg',
-                    videos: [],
-                    pictures: []
+                    videos: ['https://www.youtube.com/embed/LgVZw7IWKwY', 'https://www.youtube.com/embed/lM50gbVzxPE', 'https://www.youtube.com/embed/KMFSF2Tdg6E'],
+                    pictures: ['media/ptica_golub.jpg', 'media/ptica_golub_2.jpg', 'media/ptica_golub_3.jpg', 'media/ptica_golub_4.jpg']
                 }
             ]))
                 break;
