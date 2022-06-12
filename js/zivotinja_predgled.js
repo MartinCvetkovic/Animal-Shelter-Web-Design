@@ -83,4 +83,12 @@ $(document).ready(function() {
             $(".modal:visible .catch-right").click();
         }
     });
+
+    switch(tip) {
+        case 'psi': $("#breads").append($('<li class="breadcrumb-item"><a href="psi.html">Psi</a></li>')); break;
+        case 'macke': $("#breads").append($('<li class="breadcrumb-item"><a href="macke.html">Mačke</a></li>')); break;
+        case 'ptice': $("#breads").append($('<li class="breadcrumb-item"><a href="ptice.html">Ptice</a></li>')); break;
+    }
+
+    $("#breads").append($('<li class="breadcrumb-item active" aria-current="page">' + animal.name + '</li>'));
 });
