@@ -24,3 +24,7 @@
 #description {
     font-size: 1.1rem;
 }
+
+img.pic:hover{
+    border: 3px solid orange;
+}

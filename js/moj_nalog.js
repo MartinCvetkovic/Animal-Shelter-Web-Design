@@ -37,6 +37,9 @@ $(document).ready(function(){
 
         $("#korisnik").append("<h4>Korisnik: " + loggedIn + "</h4>");
 
+        let row = "<table class='table text-center' id='comment'><tr><th>Autor</th><th>Tekst komentara</th></tr></table>";
+        $("#komentari").append(row);
+
         let oglasi = JSON.parse(localStorage.getItem('oglasi'));
         oglasi.forEach((oglas, index) => {
             if(oglas.autor == loggedIn){
@@ -49,9 +52,9 @@ $(document).ready(function(){
             }
 
             oglas.komentari.forEach(komentar=>{
-                let row = "<table class='table text-left'><tr><td>" + komentar.autor + "</td><td>" + komentar.tekst + "</td></tr></table>";
-
-                $("#komentari").append(row);
+                if(komentar.autor == loggedIn){
+                    $("#comment").append('<tr><td>' + komentar.autor + "</td><td>" + komentar.tekst + '</td></tr>');
+                }
             });
 
         });
