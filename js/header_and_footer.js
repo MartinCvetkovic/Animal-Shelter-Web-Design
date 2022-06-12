@@ -13,16 +13,16 @@ $(document).ready(function() {
                 <div class="collapse navbar-collapse" id="navbarItems">\
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">\
                         <li class="nav-item" id="hi1">\
-                            <a class="nav-link" href="index.html">Pocetna</a>\
+                            <a class="nav-link" href="index.html">Početna</a>\
                         </li>\
                         <li class="nav-item dropdown" id="hi2">\
                             <div class="btn-group dropdown-hover-trigger">\
                                 <a href="zivotinje.html" class="dropdown-toggle nav-link" id="dropdownMenuButton1" aria-expanded="false">\
-                                    Zivotinje\
+                                    Životinje\
                                 </a>\
                                 <ul class="dropdown-menu dropdown-hover-target" aria-labelledby="navbarDropdown">\
                                     <li><a class="dropdown-item text-center" href="psi.html">Psi</a></li>\
-                                    <li><a class="dropdown-item text-center" href="macke.html">Macke</a></li>\
+                                    <li><a class="dropdown-item text-center" href="macke.html">Mačke</a></li>\
                                     <li><a class="dropdown-item text-center" href="ptice.html">Ptice</a></li>\
                                 </ul>\
                             </div>\
