@@ -12,10 +12,10 @@ $(document).ready(function() {
                 </button>\
                 <div class="collapse navbar-collapse" id="navbarItems">\
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">\
-                        <li class="nav-item">\
+                        <li class="nav-item" id="hi1">\
                             <a class="nav-link" href="index.html">Pocetna</a>\
                         </li>\
-                        <li class="nav-item dropdown">\
+                        <li class="nav-item dropdown" id="hi2">\
                             <div class="btn-group dropdown-hover-trigger">\
                                 <a href="zivotinje.html" class="dropdown-toggle nav-link" id="dropdownMenuButton1" aria-expanded="false">\
                                     Zivotinje\
@@ -27,16 +27,16 @@ $(document).ready(function() {
                                 </ul>\
                             </div>\
                         </li>\
-                        <li class="nav-item">\
+                        <li class="nav-item" id="hi3">\
                             <a class="nav-link" href="izgubljeni_ljubimci.html">Izgubljeni Ljubimci</a>\
                         </li>\
-                        <li class="nav-item">\
+                        <li class="nav-item" id="hi4">\
                             <a class="nav-link" href="dodaj_oglas.html">Dodaj Oglas</a>\
                         </li>\
-                        <li class="nav-item">\
+                        <li class="nav-item" id="hi5">\
                             <a class="nav-link" href="moj_nalog.html">Moj Nalog</a>\
                         </li>\
-                        <li class="nav-item">\
+                        <li class="nav-item" id="hi6">\
                             <a class="nav-link" href="o_nama.html">O Nama</a>\
                         </li>\
                     </ul>\
@@ -61,4 +61,6 @@ $(document).ready(function() {
         //$(this).removeClass("show");
         $(".dropdown-hover-target").removeClass("show").removeAttr("data-bs-popper");
     });
+
+    $("#"+$("#_current").val()).addClass("current-item");
 });

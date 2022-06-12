@@ -43,8 +43,16 @@
     margin-bottom: 0.5%;
 }
 
+.nav-item.current-item {
+    background-color: #ffc7a0;
+}
+
 .dropdown-item, .dropdown-menu {
     background-color: #dc7c38;
+}
+
+.dropdown-item.current-item {
+    background-color: #ffc7a0;
 }
 
 .dropdown-hover-target {
