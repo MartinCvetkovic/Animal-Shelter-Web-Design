@@ -46,7 +46,12 @@ $(document).ready(function() {
     ');
 
     let footer = $('\
-        <div class="col-12 text-center mt-3 mb-2 rounded" id="footer">\
+        <div class="col-12 text-center mt-3 rounded" id="banner">\
+            Kontakt telefon: +000000000 <a href="https://facebook.com"><img src="media/fb.png" class="bannerimg ms-5 my-2"></a>\
+            <a href="https://instagram.com"><img src="media/instagram.png" class="bannerimg ms-5 my-2"></a>\
+            <a href="https://youtube.com"><img src="media/youtube.png" class="bannerimg ms-5 my-2"></a>\
+        </div>\
+        <div class="col-12 text-center mb-2 rounded" id="footer">\
             Copyright 2022, Мартин Цветковић, Петар Тирнанић, Одсек за софтверско инжењерство Електротехничког факултета Универзитета у Београду\
         </div>\
     ');
