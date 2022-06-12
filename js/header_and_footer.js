@@ -13,16 +13,16 @@ $(document).ready(function() {
                 <div class="collapse navbar-collapse" id="navbarItems">\
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">\
                         <li class="nav-item" id="hi1">\
-                            <a class="nav-link" href="index.html">Pocetna</a>\
+                            <a class="nav-link" href="index.html">Početna</a>\
                         </li>\
                         <li class="nav-item dropdown" id="hi2">\
                             <div class="btn-group dropdown-hover-trigger">\
                                 <a href="zivotinje.html" class="dropdown-toggle nav-link" id="dropdownMenuButton1" aria-expanded="false">\
-                                    Zivotinje\
+                                    Životinje\
                                 </a>\
                                 <ul class="dropdown-menu dropdown-hover-target" aria-labelledby="navbarDropdown">\
                                     <li><a class="dropdown-item text-center" href="psi.html">Psi</a></li>\
-                                    <li><a class="dropdown-item text-center" href="macke.html">Macke</a></li>\
+                                    <li><a class="dropdown-item text-center" href="macke.html">Mačke</a></li>\
                                     <li><a class="dropdown-item text-center" href="ptice.html">Ptice</a></li>\
                                 </ul>\
                             </div>\
@@ -46,7 +46,12 @@ $(document).ready(function() {
     ');
 
     let footer = $('\
-        <div class="col-12 text-center mt-3 mb-2 rounded" id="footer">\
+        <div class="col-12 text-center mt-3 rounded" id="banner">\
+            Kontakt telefon: +000000000 <a href="https://facebook.com"><img src="media/fb.png" class="bannerimg ms-5 my-2"></a>\
+            <a href="https://instagram.com"><img src="media/instagram.png" class="bannerimg ms-5 my-2"></a>\
+            <a href="https://youtube.com"><img src="media/youtube.png" class="bannerimg ms-5 my-2"></a>\
+        </div>\
+        <div class="col-12 text-center mb-2 rounded" id="footer">\
             Copyright 2022, Мартин Цветковић, Петар Тирнанић, Одсек за софтверско инжењерство Електротехничког факултета Универзитета у Београду\
         </div>\
     ');
