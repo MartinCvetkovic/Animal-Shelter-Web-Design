@@ -11,15 +11,32 @@ $(document).ready(function() {
     $("#picture").append("<img src=" + animal.thumbnail + " class='thumbnail'>");
 
     $("#description").append(animal.description);
-    $("#weigth").append("Tezina: " + animal.kg + " kg")
-    $("#age").append("Starost: " + Math.floor(animal.months/12) + " godina, " + animal.months%12 + " meseci");
+    $("#weigth").append("<b>Tezina:</b> " + animal.kg + " kg")
+    $("#age").append("<b>Starost: </b>" + Math.floor(animal.months/12) + " godina, " + animal.months%12 + " meseci");
 
     let im = $("#images")
     let i = 0;
     let row = $("<div class='row'></div>");
-    animal.pictures.forEach(element => {
-        
-        row.append($("<div class='col-xl-3 col-md-6 col-xs-12 mb-3'><img src='" + element + "' class='pic'></div>"));
+    let max = animal.pictures.length;
+    animal.pictures.forEach((element, index) => {
+        row.append($("<div class='col-xl-3 col-md-6 col-xs-12 mb-3'><img src='" + element + "' class='pic' data-bs-toggle='modal' data-bs-target='#p" + (index) + "'>\
+        <div class='modal fade' id='p" + (index) + "' tabindex='-1' aria-hidden='true'>\
+        <div class='modal-dialog modal-lg modal-dialog-centered'>\
+            <div class='modal-content'>\
+            \
+                <div class='modal-body justify-content-center d-flex'>\
+                    <img src='" + element + "' class='img-fluid'>\
+                </div>\
+            \
+                <div class='modal-footer justify-content-between align-items-center '>\
+                    <button class='btn btn-primary catch-left' data-bs-target='#p" + ((index-1 < 0)?max-1:index-1) + "' data-bs-toggle='modal' data-bs-dismiss='modal'>Prethodna</button>\
+                    <h4>" + (index+1) + "/" + max + "</h4>\
+                    <button class='btn btn-primary catch-right' data-bs-target='#p" + ((index+1 >= max)?0:index+1) + "' data-bs-toggle='modal' data-bs-dismiss='modal'>Sledeca</button>\
+                </div>\
+            \
+            </div>\
+        </div>\
+        </div>"));
         i = (i+1)%4;
         if (i == 0) {
             im.append(row);
@@ -57,4 +74,13 @@ $(document).ready(function() {
         }
         vid.append(row);
     }
+
+    $(document).keydown(function(event) {
+        if (event.which == 37) {
+            $(".modal:visible .catch-left").click();
+        }
+        else if (event.which == 39) {
+            $(".modal:visible .catch-right").click();
+        }
+    });
 });
