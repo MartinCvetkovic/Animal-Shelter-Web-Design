@@ -13,8 +13,8 @@ $(document).ready(function() {
                     kg: '17',
                     months: '37',
                     thumbnail: 'media/dog_buldog.jpeg',
-                    videos: ['https://www.youtube.com/embed/ImlmOpMSAHQ', 'https://www.youtube.com/embed/LzG9lURtT68', 'https://www.youtube.com/embed/RCd_8va7UI8', 'https://www.youtube.com/embed/jBcDBwkV0b8', 'https://www.youtube.com/embed/ll4d5Lt-Ie8'],
-                    pictures: ['media/dog_buldog.jpeg', 'media/dog_civava.jpg', 'media/dog_pudla.webp', 'media/ptica_golub.jpg', 'media/pet_lost.jpg']
+                    videos: ['https://www.youtube.com/embed/43b1JeJivCA'],
+                    pictures: ['media/dog_buldog.jpeg', 'media/dog_buldog_2.webp', 'media/dog_buldog_3.jpg']
                 },
                 {
                     id: '1',
@@ -22,8 +22,8 @@ $(document).ready(function() {
                     breed: 'Civava',
                     gender: 'M',
                     description: 'Kratak Opis, example text to build on the card title and make up the bulk of the card\'s content.',
-                    kg: '0',
-                    months: '0',
+                    kg: '2.1',
+                    months: '57',
                     thumbnail: 'media/dog_civava.jpg',
                     videos: [],
                     pictures: []
@@ -34,8 +34,8 @@ $(document).ready(function() {
                     breed: 'Pudla',
                     gender: 'M',
                     description: 'Kratak Opis, example text to build on the card title and make up the bulk of the card\'s content.',
-                    kg: '0',
-                    months: '0',
+                    kg: '8.9',
+                    months: '101',
                     thumbnail: 'media/dog_pudla.webp',
                     videos: [],
                     pictures: []
@@ -49,8 +49,8 @@ $(document).ready(function() {
                     breed: 'Himalajska Macka',
                     gender: 'F',
                     description: 'Kratak Opis, example text to build on the card title and make up the bulk of the card\'s content.',
-                    kg: '0',
-                    months: '0',
+                    kg: '4.2',
+                    months: '69',
                     thumbnail: 'media/macka_himalajska.jpg',
                     videos: [],
                     pictures: []
@@ -61,8 +61,8 @@ $(document).ready(function() {
                     breed: 'Persijska Macka',
                     gender: 'F',
                     description: 'Kratak Opis, example text to build on the card title and make up the bulk of the card\'s content.',
-                    kg: '0',
-                    months: '0',
+                    kg: '4.4',
+                    months: '47',
                     thumbnail: 'media/macka_persijska.jpg',
                     videos: [],
                     pictures: []
@@ -73,8 +73,8 @@ $(document).ready(function() {
                     breed: 'Egejska Macka',
                     gender: 'M',
                     description: 'Kratak Opis, example text to build on the card title and make up the bulk of the card\'s content. kawaiiii <3',
-                    kg: '0',
-                    months: '0',
+                    kg: '0.9',
+                    months: '4',
                     thumbnail: 'media/macka_aegean.jpg',
                     videos: [],
                     pictures: []
@@ -88,8 +88,8 @@ $(document).ready(function() {
                     breed: 'Papagaj',
                     gender: 'M',
                     description: 'Kratak Opis, example text to build on the card title and make up the bulk of the card\'s content.',
-                    kg: '0',
-                    months: '0',
+                    kg: '0.56',
+                    months: '331',
                     thumbnail: 'media/ptica_papagaj.jpg',
                     videos: [],
                     pictures: []
@@ -100,8 +100,8 @@ $(document).ready(function() {
                     breed: 'Stiglan',
                     gender: 'F',
                     description: 'Kratak Opis, example text to build on the card title and make up the bulk of the card\'s content.',
-                    kg: '0',
-                    months: '0',
+                    kg: '0.03',
+                    months: '33',
                     thumbnail: 'media/ptica_stiglan.jpg',
                     videos: [],
                     pictures: []
@@ -109,11 +109,11 @@ $(document).ready(function() {
                 {
                     id: '2',
                     name: 'Herakle',
-                    breed: 'Obican Golub',
+                    breed: 'Golub',
                     gender: 'M',
                     description: 'Kratak Opis, example text to build on the card title and make up the bulk of the card\'s content.',
-                    kg: '0',
-                    months: '0',
+                    kg: '0.47',
+                    months: '55',
                     thumbnail: 'media/ptica_golub.jpg',
                     videos: [],
                     pictures: []
