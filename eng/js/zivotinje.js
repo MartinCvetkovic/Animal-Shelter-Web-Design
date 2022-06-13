@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     if (localStorage.getItem(tip) == null) {
         switch(tip) {
-            case 'psi': localStorage.setItem(tip, JSON.stringify([
+            case 'dogs': localStorage.setItem(tip, JSON.stringify([
                 {
                     id: '0',
                     name: 'Donna',
@@ -21,7 +21,7 @@ $(document).ready(function() {
                     name: 'Carli',
                     breed: 'Chihuahua',
                     gender: 'M',
-                    description: 'Friendly white colored chihuahua with dark freckles, small build and calmer temperament.',
+                    description: 'Friendly white colored chihuahua with dark freckles, small build and calm temper.',
                     kg: '2.1',
                     months: '57',
                     thumbnail: 'media/dog_civava.jpg',
@@ -33,7 +33,7 @@ $(document).ready(function() {
                     name: 'Dusàn',
                     breed: 'Poodle',
                     gender: 'M',
-                    description: 'Older dog with very thick, golden hair. Loves laying on the sun and other relaxing activities.',
+                    description: 'Older dog with very thick, golden fur. Loves laying on the sun and other relaxing activities.',
                     kg: '8.9',
                     months: '101',
                     thumbnail: 'media/dog_pudla.webp',
@@ -42,7 +42,7 @@ $(document).ready(function() {
                 }
             ]))
                 break;
-            case 'macke': localStorage.setItem(tip, JSON.stringify([
+            case 'cats': localStorage.setItem(tip, JSON.stringify([
                 {
                     id: '0',
                     name: 'Doki',
@@ -81,7 +81,7 @@ $(document).ready(function() {
                 }
             ]))
                 break;
-            case 'ptice': localStorage.setItem(tip, JSON.stringify([
+            case 'birds': localStorage.setItem(tip, JSON.stringify([
                 {
                     id: '0',
                     name: 'Pepe',
