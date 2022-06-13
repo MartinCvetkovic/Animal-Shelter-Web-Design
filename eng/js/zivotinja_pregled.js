@@ -29,9 +29,9 @@ $(document).ready(function() {
                 </div>\
             \
                 <div class='modal-footer justify-content-between align-items-center '>\
-                    <button class='btn btn-primary catch-left' data-bs-target='#p" + ((index-1 < 0)?max-1:index-1) + "' data-bs-toggle='modal' data-bs-dismiss='modal'>Prethodna</button>\
+                    <button class='btn btn-primary catch-left' data-bs-target='#p" + ((index-1 < 0)?max-1:index-1) + "' data-bs-toggle='modal' data-bs-dismiss='modal'>Previous</button>\
                     <h4>" + (index+1) + "/" + max + "</h4>\
-                    <button class='btn btn-primary catch-right' data-bs-target='#p" + ((index+1 >= max)?0:index+1) + "' data-bs-toggle='modal' data-bs-dismiss='modal'>Sledeca</button>\
+                    <button class='btn btn-primary catch-right' data-bs-target='#p" + ((index+1 >= max)?0:index+1) + "' data-bs-toggle='modal' data-bs-dismiss='modal'>Next</button>\
                 </div>\
             \
             </div>\
