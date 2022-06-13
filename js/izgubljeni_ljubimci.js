@@ -46,13 +46,13 @@ $(document).ready(function(){
         }
 
         oglasi.forEach((oglas, index) => {
-            let row = "<h5 class='text-center'>Oglas</h5><table class='table text-center' id='tbl" + index + "'><tbody id='pdfGroup_" + index + "'><tr><td>Ime ljubimca: </td><td>" + oglas.ime + "</td></tr><tr><td>Opis: </td><td>"
+            let row = "<div class='p-5'><h5 class='text-center'>Oglas</h5><table class='table text-center' id='tbl" + index + "'><tbody id='pdfGroup_" + index + "'><tr><td>Ime ljubimca: </td><td>" + oglas.ime + "</td></tr><tr><td>Opis: </td><td>"
                 + oglas.opis + "</td></tr><tr><td>Kontakt telefon: </td><td>" + oglas.tel + "</td></tr></tbody>"
                 + "<tr class='last-row'><td><input class='form-control' id='inp" + index + "' type='text' placeholder='Tekst komentara'></td>"
                 +"<td><button class='comment-button btn btn-light btn-outline-secondary' id='btn" + index
-                + "'>Ostavi komentar</button></td><td><button class='pdf-button btn btn-light btn-outline-secondary' id='pdf" + index
+                + "'>Ostavi komentar</button><button class='pdf-button btn btn-light btn-outline-secondary ms-5' id='pdf" + index
                 + "'>Preuzmi oglas</button></td></tr></table><h6 class='text-center'>Komentari</h6>"
-                + "<table class='table text-center' id='comment" + index + "'><tr><th>Autor</th><th>Tekst komentara</th></tr></table><br><br>";
+                + "<table class='table text-center' id='comment" + index + "'><tr><th>Autor</th><th>Tekst komentara</th></tr></table></div><br><br>";
 
             $("#zivotinje").append(row);
 
