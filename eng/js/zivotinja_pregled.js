@@ -85,9 +85,9 @@ $(document).ready(function() {
     });
 
     switch(tip) {
-        case 'psi': $("#breads").append($('<li class="breadcrumb-item"><a href="psi.html">Dogs</a></li>')); break;
-        case 'macke': $("#breads").append($('<li class="breadcrumb-item"><a href="macke.html">Cats</a></li>')); break;
-        case 'ptice': $("#breads").append($('<li class="breadcrumb-item"><a href="ptice.html">Birds</a></li>')); break;
+        case 'dogs': $("#breads").append($('<li class="breadcrumb-item"><a href="psi.html">Dogs</a></li>')); break;
+        case 'cats': $("#breads").append($('<li class="breadcrumb-item"><a href="macke.html">Cats</a></li>')); break;
+        case 'birds': $("#breads").append($('<li class="breadcrumb-item"><a href="ptice.html">Birds</a></li>')); break;
     }
 
     $("#breads").append($('<li class="breadcrumb-item active" aria-current="page">' + animal.name + '</li>'));
