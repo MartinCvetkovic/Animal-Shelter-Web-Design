@@ -41,8 +41,9 @@ $(document).ready(function(){
     let cnt = 0;
     sviOglasi.forEach((oglas, index) => {
         if(cnt >= 3) return;
-        let row = "<div class='p-3 col-sm-12 col-md-6 col-lg-3'><h5 class='text-center'>Oglas</h5><table class='table text-center' id='tbl" + index + "'><tbody id='pdfGroup_" + index + "'><tr><td>Ime ljubimca: </td><td>" + oglas.ime + "</td></tr><tr><td>Opis: </td><td>"
-                + oglas.opis + "</td></tr><tr><td>Kontakt telefon: </td><td>" + oglas.tel + "</td></tr></tbody></table></div>";
+        let row = "<div class='p-3 col-sm-12 col-md-6 col-lg-3'><h5 class='text-center'>Announcement</h5><table class='table text-center' id='tbl"
+            + index + "'><tbody id='pdfGroup_" + index + "'><tr><td>Pet name: </td><td>" + oglas.ime + "</td></tr><tr><td>Description: </td><td>"
+            + oglas.opis + "</td></tr><tr><td>Contact number: </td><td>" + oglas.tel + "</td></tr></tbody></table></div>";
 
 
         $("#oglasi").append(row);

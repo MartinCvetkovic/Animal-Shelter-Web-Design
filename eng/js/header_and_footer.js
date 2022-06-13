@@ -13,31 +13,31 @@ $(document).ready(function() {
                 <div class="collapse navbar-collapse" id="navbarItems">\
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">\
                         <li class="nav-item" id="hi1">\
-                            <a class="nav-link" href="index.html">Početna</a>\
+                            <a class="nav-link" href="index.html">Home</a>\
                         </li>\
                         <li class="nav-item dropdown" id="hi2">\
                             <div class="btn-group dropdown-hover-trigger">\
                                 <a href="zivotinje.html" class="dropdown-toggle nav-link" id="dropdownMenuButton1" aria-expanded="false">\
-                                    Životinje\
+                                    Animals\
                                 </a>\
                                 <ul class="dropdown-menu dropdown-hover-target" aria-labelledby="navbarDropdown">\
-                                    <li><a class="dropdown-item text-center" href="psi.html">Psi</a></li>\
-                                    <li><a class="dropdown-item text-center" href="macke.html">Mačke</a></li>\
-                                    <li><a class="dropdown-item text-center" href="ptice.html">Ptice</a></li>\
+                                    <li><a class="dropdown-item text-center" href="psi.html">Dogs</a></li>\
+                                    <li><a class="dropdown-item text-center" href="macke.html">Cats</a></li>\
+                                    <li><a class="dropdown-item text-center" href="ptice.html">Birds</a></li>\
                                 </ul>\
                             </div>\
                         </li>\
                         <li class="nav-item" id="hi3">\
-                            <a class="nav-link" href="izgubljeni_ljubimci.html">Izgubljeni Ljubimci</a>\
+                            <a class="nav-link" href="izgubljeni_ljubimci.html">Lost Pets</a>\
                         </li>\
                         <li class="nav-item" id="hi4">\
-                            <a class="nav-link" href="dodaj_oglas.html">Dodaj Oglas</a>\
+                            <a class="nav-link" href="dodaj_oglas.html">Add Announcement</a>\
                         </li>\
                         <li class="nav-item" id="hi5">\
-                            <a class="nav-link" href="moj_nalog.html">Moj Nalog</a>\
+                            <a class="nav-link" href="moj_nalog.html">My Account</a>\
                         </li>\
                         <li class="nav-item" id="hi6">\
-                            <a class="nav-link" href="o_nama.html">O Nama</a>\
+                            <a class="nav-link" href="o_nama.html">About Us</a>\
                         </li>\
                     </ul>\
                 </div>\
@@ -47,7 +47,7 @@ $(document).ready(function() {
 
     let footer = $('\
         <div class="col-12 text-center mt-3 rounded" id="banner">\
-            Kontakt telefon: +000000000 <a href="https://facebook.com"><img src="../media/fb.png" class="bannerimg ms-5 my-2"></a>\
+            Contact number: +000000000 <a href="https://facebook.com"><img src="../media/fb.png" class="bannerimg ms-5 my-2"></a>\
             <a href="https://instagram.com"><img src="../media/instagram.png" class="bannerimg ms-5 my-2"></a>\
             <a href="https://youtube.com"><img src="../media/youtube.png" class="bannerimg ms-5 my-2"></a>\
         </div>\

@@ -11,8 +11,8 @@ $(document).ready(function() {
     $("#picture").append("<img src=../" + animal.thumbnail + " class='thumbnail'>");
 
     $("#description").append(animal.description);
-    $("#weigth").append("<b>Tezina:</b> " + animal.kg + " kg")
-    $("#age").append("<b>Starost: </b>" + Math.floor(animal.months/12) + " godina, " + animal.months%12 + " meseci");
+    $("#weigth").append("<b>Weight:</b> " + animal.kg + " kg")
+    $("#age").append("<b>Age: </b>" + Math.floor(animal.months/12) + " years, " + animal.months%12 + " months");
 
     let im = $("#images")
     let i = 0;
@@ -85,9 +85,9 @@ $(document).ready(function() {
     });
 
     switch(tip) {
-        case 'psi': $("#breads").append($('<li class="breadcrumb-item"><a href="psi.html">Psi</a></li>')); break;
-        case 'macke': $("#breads").append($('<li class="breadcrumb-item"><a href="macke.html">Mačke</a></li>')); break;
-        case 'ptice': $("#breads").append($('<li class="breadcrumb-item"><a href="ptice.html">Ptice</a></li>')); break;
+        case 'psi': $("#breads").append($('<li class="breadcrumb-item"><a href="psi.html">Dogs</a></li>')); break;
+        case 'macke': $("#breads").append($('<li class="breadcrumb-item"><a href="macke.html">Cats</a></li>')); break;
+        case 'ptice': $("#breads").append($('<li class="breadcrumb-item"><a href="ptice.html">Birds</a></li>')); break;
     }
 
     $("#breads").append($('<li class="breadcrumb-item active" aria-current="page">' + animal.name + '</li>'));

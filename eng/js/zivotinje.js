@@ -139,7 +139,7 @@ $(document).ready(function() {
                             <h6 class="card-subtitle mb-2 text-muted">' + animal.breed + '&nbsp<img src="../' + (animal.gender == "F"?"media/gender_female.png":"media/gender_male.png") + '" alt="' + (animal.gender == "F"?"zensko":"musko") + '" class="gender ' + (animal.gender == "F"?"female":"male") + '"></h6>\
                             <hr class="divider"><p class="card-text">' + animal.description + '</p>\
                             <div class="attributes">\
-                                <span class="weigth">' + animal.kg + ' kg</span><span class="age">' + (animal.months<12? animal.months+" meseci":Math.floor(animal.months/12)+" godina") + '</span>\
+                                <span class="weigth">' + animal.kg + ' kg</span><span class="age">' + (animal.months<12? animal.months+" months":Math.floor(animal.months/12)+" years") + '</span>\
                             </div>\
                         </div>\
                     </div>\

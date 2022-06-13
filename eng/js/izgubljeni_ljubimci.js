@@ -32,7 +32,7 @@ $(document).ready(function(){
                         width: 500
                     }]
                 };
-                pdfMake.createPdf(docDefinition).download("Oglas.pdf");
+                pdfMake.createPdf(docDefinition).download("Announcement.pdf");
             }
         });
     }
@@ -41,18 +41,19 @@ $(document).ready(function(){
     function inicijalizuj(){
         let oglasi = JSON.parse(localStorage.getItem("oglasi"));
         if(oglasi == null){
-            $("#zivotinje").append("Nema oglasa za izgubljene ljubimce");
+            $("#zivotinje").append("No announcements for lost pets");
             return;
         }
 
         oglasi.forEach((oglas, index) => {
-            let row = "<div class='p-5'><h5 class='text-center'>Oglas</h5><table class='table text-center' id='tbl" + index + "'><tbody id='pdfGroup_" + index + "'><tr><td>Ime ljubimca: </td><td>" + oglas.ime + "</td></tr><tr><td>Opis: </td><td>"
-                + oglas.opis + "</td></tr><tr><td>Kontakt telefon: </td><td>" + oglas.tel + "</td></tr></tbody>"
-                + "<tr class='last-row'><td><input class='form-control' id='inp" + index + "' type='text' placeholder='Tekst komentara'></td>"
+            let row = "<div class='p-5'><h5 class='text-center'>Announcement</h5><table class='table text-center' id='tbl"
+                + index + "'><tbody id='pdfGroup_" + index + "'><tr><td>Pet name: </td><td>" + oglas.ime + "</td></tr><tr><td>Description: </td><td>"
+                + oglas.opis + "</td></tr><tr><td>Contact number: </td><td>" + oglas.tel + "</td></tr></tbody>"
+                + "<tr class='last-row'><td><input class='form-control' id='inp" + index + "' type='text' placeholder='Comment text'></td>"
                 +"<td><button class='comment-button btn btn-light btn-outline-secondary' id='btn" + index
-                + "'>Ostavi komentar</button><button class='pdf-button btn btn-light btn-outline-secondary ms-5' id='pdf" + index
-                + "'>Preuzmi oglas</button></td></tr></table><h6 class='text-center'>Komentari</h6>"
-                + "<table class='table text-center' id='comment" + index + "'><tr><th>Autor</th><th>Tekst komentara</th></tr></table></div><br><br>";
+                + "'>Leave a comment</button><button class='pdf-button btn btn-light btn-outline-secondary ms-5' id='pdf" + index
+                + "'>Download announcement</button></td></tr></table><h6 class='text-center'>Comments</h6>"
+                + "<table class='table text-center' id='comment" + index + "'><tr><th>Author</th><th>Comment text</th></tr></table></div><br><br>";
 
             $("#zivotinje").append(row);
 
