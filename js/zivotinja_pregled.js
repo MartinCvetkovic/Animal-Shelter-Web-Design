@@ -1,4 +1,18 @@
 $(document).ready(function() {
+    
+    $("a").click(function(){
+        let id = localStorage.getItem('aId');
+        let tip = id.split("_")[0];
+        let asd;
+        switch(tip) {
+            case 'psi': asd = 'dogs'; break;
+            case 'macke': asd = 'cats'; break;
+            case 'ptice': asd = 'birds'; break;
+        }
+        id = id.split("_")[1];
+        localStorage.setItem('aId', asd + '_' + id);
+    });
+
     let id = localStorage.getItem('aId');
     let tip = id.split("_")[0];
     id = id.split("_")[1];
